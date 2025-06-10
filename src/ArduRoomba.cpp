@@ -486,7 +486,7 @@ void ArduRoomba::sensors(char packetID)
   // Read the data in chunks
   while (_irobot.available() > 0)
   {
-    byte buffer[64];
+    byte buffer[2];
     size_t len = _irobot.readBytes(buffer, sizeof(buffer));
     for (size_t i = 0; i < len; i++)
     {
