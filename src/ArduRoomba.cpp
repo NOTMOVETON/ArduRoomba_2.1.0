@@ -4,7 +4,6 @@ ArduRoomba::ArduRoomba(int rxPin, int txPin, int brcPin)
     : _rxPin(rxPin), _txPin(txPin), _brcPin(brcPin), _irobot(rxPin, txPin)
 {
   // Constructor implementation
-  // _irobot.setTimeout(1000);
 }
 
 byte ArduRoomba::_parseOneByteStreamBuffer(byte *packets, int &start) 
